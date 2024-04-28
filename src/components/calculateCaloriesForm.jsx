@@ -13,7 +13,7 @@ function CalculateCaloriesForm({ age, setAge, weight, setWeight, height, setHeig
         const validateNumber = (value, fieldName, minValue, maxValue) => {
             const valueAsString = value.toString();
             if (isNaN(valueAsString) || valueAsString < minValue || valueAsString > maxValue) {
-                newErrors[fieldName] = `Ingrese un valor válido entre ${minValue} y ${maxValue}.`;
+                newErrors[fieldName] = `Ingrese un número válido entre ${minValue} y ${maxValue}.`;
             }
         }        
     
